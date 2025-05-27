@@ -17,8 +17,11 @@ const players = [
         Mentally, Ali is his own worst enemy. Even if he's having a great round, one bad hole can send him into a full-on spiral, derailing the rest of his game. His resilience (or lack thereof) makes him one of the more unpredictable players on the course.
         </p>
         <li>Driving Accuracy: 7/10</li>
-        <li>Putting: 6/10</li>
-        <li>Mental Game: 4/10</li>
+        <li>Driving Distance: 8/10</li>
+        <li>Iron Accuracy: 7/10</li>
+        <li>Putting: 7/10</li>
+        <li>Chipping: 8/10</li>
+        <li>Headloss Potential: 9/10</li>
       </div>
     ),
   },
