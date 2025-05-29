@@ -19,7 +19,9 @@ function App() {
 
   return (
     <div className="App">
-      <button onClick={() => setShowContent(false)}>Back to Landing Page</button>
+      <button className="logo-button" onClick={() => setShowContent(false)}>
+        <img src={logo} alt="Back to Home" />
+      </button>
       <div className="tabs">
         <button
           className={activeTab === 'rules' ? 'active' : ''}
