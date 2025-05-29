@@ -10,6 +10,7 @@ const rules = [
             <li>Breakfast is always served.</li>
             <li>Lunch and dinner will not be served.</li>
             <li>Local rules will be followed.</li>
+            <li>Gimmees on the green will be within a putters length</li>
             <li>We will have the power to implement lift, clean and place if seen fit.</li>
             <li>Tee flip at start of the round to decide scorer.</li>
             <li>Each round will be scored with both stroke play and stableford.</li>
@@ -18,7 +19,7 @@ const rules = [
       },
     
   {
-    label: 'Round 1',
+    label: 'PGA Day',
     content: (
       <div>
         <p>PGA Arran day</p>
@@ -32,7 +33,7 @@ const rules = [
     ),
   },
   {
-    label: 'Round 2',
+    label: 'Reverse Scramble',
     content: (
       <div>
         <p>Reverse Scramble format (Pairs)</p>
@@ -45,12 +46,32 @@ const rules = [
     ),
   },
   {
-    label: 'Round 3',
+    label: 'Ryder Cup',
     content: (
         <div>
-        <li>Rule 1 for Round 3</li>
-        <li>Rule 2 for Round 3</li>
-        <li>Rule 3 for Round 3</li>
+          <p>Ryder Cup Format</p>
+        <li>The Ryder Cup will span over 3 rounds</li>
+        <li>Players will be split into either team Europe or team America</li>
+        <li>First round will be pairs match play</li>
+        <li>Second round will be pairs best ball scramble</li>
+        <li>Third round will be a 1 on 1 match play format. Will still be a 4 ball but you will be playing against 1 specific player</li>
+        <li>For all these round normal scoring will still be taking place for grint</li>
+        <li>At the end of the 3rd round team with the most points will win the Ryder cup</li>
+        <li>Losing team will have to do something yet to be determinded for winning team</li>
+        </div>
+    ),
+  },
+  {
+    label: 'Mix it up',
+    content: (
+        <div>
+          <p>Mix it up day</p>
+        <li>Mulligan or Reverse Mulligan in play. Once each for the round</li>
+        <li>Fairway robbery. One for the round (you can not reverse mulligan a robbery)</li>
+        <li>Big Gimmee. 2 putt from anywhere on the green</li>
+        <li>String theory. Players will each pull a string at the start of the round</li>
+        <li>Joker. Called at the start of the hole for double points</li>
+        <li>Mulligans are available for purchase with a shot</li>
         </div>
     ),
   },
