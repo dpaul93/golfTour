@@ -1,44 +1,87 @@
 .App {
   text-align: center;
-  background-color: #e6f7ff; /* Light blue background */
+  background: linear-gradient(135deg, #1a2a3a 0%, #2c3e50 100%);
   min-height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  color: #ffffff;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 .App-logo {
-  height: 40vmin;
-  pointer-events: none;
+  max-width: 300px;
+  margin-bottom: 2rem;
+  filter: drop-shadow(0 4px 8px rgba(0, 0, 0, 0.2));
+  transition: transform 0.3s ease;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.App-logo:hover {
+  transform: scale(1.05);
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+button {
+  background: linear-gradient(135deg, #007bff 0%, #0056b3 100%);
   color: white;
+  border: none;
+  padding: 12px 24px;
+  border-radius: 25px;
+  font-size: 1.1rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  margin: 10px;
 }
 
-.App-link {
-  color: #61dafb;
+button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 8px rgba(0, 0, 0, 0.2);
+  background: linear-gradient(135deg, #0056b3 0%, #003d82 100%);
 }
 
-/* @keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+button:active {
+  transform: translateY(0);
+}
+
+.tabs {
+  display: flex;
+  gap: 15px;
+  margin: 20px 0;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.tabs button {
+  min-width: 120px;
+  font-weight: 500;
+}
+
+.tabs button.active {
+  background: linear-gradient(135deg, #28a745 0%, #1e7e34 100%);
+}
+
+/* Add smooth transitions for all interactive elements */
+* {
+  transition: all 0.3s ease;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .App-logo {
+    max-width: 200px;
   }
-  to {
-    transform: rotate(360deg);
+  
+  button {
+    padding: 10px 20px;
+    font-size: 1rem;
   }
-} */
+  
+  .tabs {
+    gap: 10px;
+  }
+  
+  .tabs button {
+    min-width: 100px;
+  }
+}
