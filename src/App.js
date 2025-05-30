@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import './App.css';
 import GolfTourRules from './components/GolfTourRules';
 import PlayerProfile from './components/PlayerProfile';
+import Weather from './components/Weather';
 import logo from './Arran1.png';
 
 function App() {
@@ -22,6 +23,7 @@ function App() {
       <button className="logo-button" onClick={() => setShowContent(false)}>
         <img src={logo} alt="Back to Home" />
       </button>
+      <Weather />
       <div className="tabs">
         <button
           className={activeTab === 'rules' ? 'active' : ''}
